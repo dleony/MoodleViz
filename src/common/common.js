@@ -64,7 +64,6 @@ var getUserId = function(profileUrl, callback) {
                  pattern = new RegExp('(\\w+)@' + mkConfig.domainPattern, 'g');
                  result = pattern.exec(str);
                  pattern.lastIndex = 0;
-                 kango.console.log(result);
                  pattern.lastIndex = 0;
                  if (result && result.length >= 2) {
                      userId = result[1];
